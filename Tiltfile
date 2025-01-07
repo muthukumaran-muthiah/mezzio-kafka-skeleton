@@ -2,7 +2,7 @@ commit_sha = str(local('git rev-parse --short HEAD')).strip()
 extra_tag = 'mezzio-kafka-skeleton:sha-' + commit_sha
 
 docker_build(
-    'trainer',
+    'mezzio-kafka-skeleton',
      extra_tag=extra_tag,
      context='.',
      live_update=[
